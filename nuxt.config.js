@@ -10,6 +10,14 @@ export default {
    */
   target: "static",
   ssr: false,
+  router: {
+    base: "/New-Portfolio/",
+  },
+
+  build: {
+    extractCSS: true,
+    publicPath: "/New-Portfolio/_nuxt/",
+  },
   generate: {
     fallback: true,
   },
@@ -29,10 +37,19 @@ export default {
       },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "stylesheet", href: "/assets/css/vendor/bootstrap.min.css" },
-      { rel: "stylesheet", href: "/assets/css/vendor/lineicons.css" },
-      { rel: "stylesheet", href: "/assets/css/vendor/line-awesome.min.css" },
+      { rel: "icon", type: "image/x-icon", href: "/New-Portfolio/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "/New-Portfolio/assets/css/vendor/bootstrap.min.css",
+      },
+      {
+        rel: "stylesheet",
+        href: "/New-Portfolio/assets/css/vendor/lineicons.css",
+      },
+      {
+        rel: "stylesheet",
+        href: "/New-Portfolio/assets/css/vendor/line-awesome.min.css",
+      },
       {
         rel: "stylesheet",
         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css",
